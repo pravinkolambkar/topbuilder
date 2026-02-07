@@ -1,0 +1,106 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress {
+  width: 95%;
+  height: 5px;
+  position: absolute;
+  top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(162, 32, 226);
+  /* background-color: #f0f8ff; */
+}
+
+/* .progress-bar {
+  height: 25px;
+  border: 2px solid #2196f3;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #4caf50;
+} */
+
+/* .progress:hover {
+  background-color: #ff5722;
+} */
+
+.row-postjob {
+  display:flex;
+  flex-direction: column;
+}
+
+app-screen {
+  width: 100%;
+  top: 110px;
+  left: 15px;
+  position: absolute;
+  color: rgb(121, 121, 121);
+}
+
+.button-row {
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  left: 40px;
+  bottom: 10px;
+  margin-top: 16px;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+button {
+  font-size: 18px;
+  margin: 20px 20px;
+}
+
+.btn-submit {
+  background-color: #3f02a1;
+  color: #fff;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span {
+  margin: 0px 5px;
+}
+
+.list-group-item {
+  display: none;
+}
+
+.list-group-item.active {
+  display: block;
+}
+
+/* Ensure the buttons stack below the app-screen within the column */
+.col-postjob {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout/spacing for the button row */
+
+
+  /* Responsive */
+  @media(max-width: 767px) {
+
+    .container {
+      top: 380px;
+    }
+  }

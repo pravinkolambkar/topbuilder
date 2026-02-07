@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .login-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .login-title {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px;
+  }
+
+  .title {
+    width: 350px;
+    margin: 4px;
+    padding-left: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(121, 121, 121);
+  }
+
+  mat-card-title {
+    margin: 4px;
+    padding: 4px;
+    color: rgb(121, 121, 121);
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+  mat-card-header {
+    margin: 10px 0px;
+  }
+
+  .login-card {
+    width: 400px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: rgba(112, 153, 23, 0.4) 0px 0px 0px 2px, rgba(112, 153, 23, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.09) 0px 2px .5px;
+  }
+
+  mat-card-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container mat-form-field {
+    margin: 4px 0px;
+  }
+
+  .col-email, .col-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  mat-form-field button {
+    margin: 5px;
+  }
+
+  button {
+    width: 360px;
+    margin-top: 20px;
+  }
+ 
+  mat-card-content a {
+    margin-top: 15px;
+    color: #709917;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+
+    .container {
+      margin-top: 360px;
+    }
+  }
+
+  

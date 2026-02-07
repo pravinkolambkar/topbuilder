@@ -1,0 +1,109 @@
+.container {
+  margin-top: 60px;
+  z-index: 1;
+}
+
+.our-services-title {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-family: montserrat,sans-serif;
+  margin-bottom: 25px;
+  width: 375px;
+  margin: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(121, 121, 121);
+  align-items: center;
+  padding-bottom: 10px;   
+  /* border-bottom: 3px solid rgb(233, 80, 10);  */
+  border-bottom: 2px solid #709917;
+  box-shadow: rgba(112, 153, 23, 0.09) 0px 2px 1px, rgba(112, 153, 23, 0.09) 0px 4px 2px, rgba(112, 153, 23, 0.09) 0px 8px 4px, rgba(112, 153, 23, 0.09) 0px 16px 8px;
+}
+
+  .cards-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .our-services-card {
+    width: 100%;    
+    margin: 5px 10px;
+    padding: 7px 7x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;      
+  }
+
+  .row-images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .service-with-image {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin: 20px 10px;  
+    margin-bottom: 20px;
+  }
+
+  .service-with-image > .service-image {
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dac9fc;
+    border-radius: 25px;
+    background-color: #f4f1fa;
+    box-shadow: rgba(100, 26, 248, 0.1) 0px 2px 8px, rgba(100, 26, 248, 0.05) 0px 4px 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .service-image:hover {
+    transform: scale(1.1);
+    background-color: #dac9fc;
+    box-shadow: rgba(186, 168, 216, 0.09) 0px 2px 1px, rgba(136, 91, 224, 0.09) 0px 4px 2px, rgba(111, 46, 241, 0.09) 0px 8px 4px, rgba(100, 26, 248, 0.09) 0px 16px 8px;
+  }
+    
+  .our-service {
+    font-weight: 600;
+    font-size: 16px;
+    color: #636065;
+    text-decoration: none;  
+    transition: all 0.3s ease;
+  }
+
+  .our-service:hover{
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 800;
+  }

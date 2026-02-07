@@ -1,0 +1,29 @@
+/* .file-upload-button {
+    height: 80px;
+    width: 80px;    
+    border:none;
+    /* background-image: url('https://www.newdelhiairport.in/src/images/advertise/upload.jpg') !important; 
+    
+    background-image: image("../assets/Images/FileUpload/FileUpload.png");
+    background-size: contain;
+} */
+
+button {
+    border: none;
+    background-color:white;
+}
+    
+img {
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 15px;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+img:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    background-color:rgb(117, 125, 189);
+}

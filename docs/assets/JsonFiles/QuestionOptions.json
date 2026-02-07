@@ -1,0 +1,149 @@
+[
+    {
+        "Id" : 1,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 1,
+        "OptionId" : 1,
+        "NextQuestionId" : 3
+    },
+    {
+        "Id" : 2,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 1,
+        "OptionId" : 2,
+        "NextQuestionId" : 2
+    },
+    {
+        "Id" : 3,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 1,
+        "OptionId" : 3,
+        "NextQuestionId" : 2
+    },
+    {
+        "Id" : 4,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 1,
+        "OptionId" : 4,
+        "NextQuestionId" : 2
+    },
+    {
+        "Id" : 5,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 1,
+        "OptionId" : 5,
+        "NextQuestionId" : 2
+    },
+    {
+        "Id" : 6,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 1,
+        "OptionId" : 6,
+        "NextQuestionId" : 2
+    },
+    {
+        "Id" : 7,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 2,
+        "OptionId" : 7,
+        "NextQuestionId" : 3
+    },
+    {
+        "Id" : 8,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 2,
+        "OptionId" : 8,
+        "NextQuestionId" : 3
+    },
+    {
+        "Id" : 9,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 2,
+        "OptionId" : 9,
+        "NextQuestionId" : 3
+    },
+    {
+        "Id" : 10,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 2,
+        "OptionId" : 10,
+        "NextQuestionId" : 3
+    },
+    {
+        "Id" : 11,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 3,
+        "OptionId" : 11,
+        "NextQuestionId" : 4
+    },
+    {
+        "Id" : 12,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 3,
+        "OptionId" : 12,
+        "NextQuestionId" : 4
+    },
+    {
+        "Id" : 13,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 3,
+        "OptionId" : 13,
+        "NextQuestionId" : 4
+    },
+    {
+        "Id" : 14,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 3,
+        "OptionId" : 14,
+        "NextQuestionId" : 4
+    },
+    {
+        "Id" : 15,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 4,
+        "OptionId" : -1,
+        "NextQuestionId" : 5
+    },
+    {
+        "Id" : 16,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 5,
+        "OptionId" : -1,
+        "NextQuestionId" : 6
+    },
+    {
+        "Id" : 17,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 6,
+        "OptionId" : -1,
+        "NextQuestionId" : 7
+    },
+    {
+        "Id" : 18,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 7,
+        "OptionId" : -1,
+        "NextQuestionId" : 8
+    },
+    {
+        "Id" : 19,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 8,
+        "OptionId" : -1,
+        "NextQuestionId" : 9
+    },
+    {
+        "Id" : 20,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 9,
+        "OptionId" : -1,
+        "NextQuestionId" : 10
+    },
+    {
+        "Id" : 21,
+        "TradePersonJobId" : 4,
+        "QuestionId" : 10,
+        "OptionId" : -1,
+        "NextQuestionId" : -1
+    }
+]

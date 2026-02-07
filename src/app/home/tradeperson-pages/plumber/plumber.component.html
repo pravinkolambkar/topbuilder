@@ -1,0 +1,166 @@
+<!-- <div>
+	<div class="flex-container">
+		<form class="plumber-form">
+			<div class="row row-localplumber">
+				<div class="row-image">
+					<div class="col login-card-wrapper">
+						<form class="col col-sm-12 col-md-12 col-lg-12 login-form" (ngSubmit)="onSubmit()" #myForm="ngForm">	
+							<mat-card class="login-card">
+								<mat-card-content>
+									<div>
+										<mat-title>
+											<div class="login-title">
+												Post your job for free. Get quotes. Read reviews.
+											</div>
+										</mat-title>
+									</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-select">
+											<label for="tradeperson" class="form-label">What type of tradeperson do you need?</label>
+											<mat-form-field class="mat-trade">
+												<mat-label>Select your trade</mat-label>
+												<mat-select [(ngModel)]="selectedTradeperson" (selectionChange)="onTradepersonSelect($event)">
+													<mat-option *ngFor="let tradeperson of filteredTradeperson" [value]="tradeperson.Id">{{tradeperson.Title}}</mat-option>																
+												</mat-select>
+											</mat-form-field>
+
+											<label for="job" class="form-label">What type of job is it?</label>
+											<mat-form-field class="mat-job">
+												<mat-label>Please select job</mat-label>
+												<mat-select [(ngModel)]="selectedJob" (selectionChange)="onJobSelect($event)">
+													<mat-option *ngFor="let job of filteredJob" [value]="job.Id">{{job.Title}}</mat-option>																
+												</mat-select>
+											</mat-form-field>
+										</div>
+									
+									<div class="col-sm-12 col-md-12 col-lg-12 login-button">
+										<button mat-raised-button color="primary">NEXT STEP ></button>
+									</div>
+								</mat-card-content>
+							</mat-card>
+						</form>
+						<app-find-tradeperson></app-find-tradeperson>
+					</div>
+					<div class="col card-img-wrapper">
+						<img class="card-img" mat-card-image src="../../assets/Images/tpPages/plumbing-work.jpg" alt="Plumber">
+					</div>
+				</div>
+
+				<div class="card-image">
+					<div class="plumber-data">
+							<mat-card class="plumber-card">
+								<mat-card-content class="plumberdata-content">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row row-plumberdata">
+										<mat-title>
+											<h2 class="heading">How to Find the Best Local Plumber: Expert Tips and Pricing Guide</h2>
+										</mat-title>
+										<p>
+											When plumbing issues arise, finding a reliable local plumber in the UK becomes a top priority. Whether it's a leaking faucet, a clogged drain, or a major plumbing project, hiring the right plumber can save you time, money, and headaches. Here are some expert tips to help you in your search, along with a general pricing guide for common plumbing services in the UK, including emergency callout information.
+										</p>
+									</div>
+					
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row row-plumberdatalist">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>1.	Browse Qualified Plumbers</b>
+												</mat-subtitle>
+												<p>
+													Begin your search by browsing through our network of qualified plumbers. Our platform connects you with skilled professionals who are ready to take on your plumbing project.This change encourages users to explore the plumbers available on your platform, making it more relevant to your service.
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>2. Check Credentials</b>
+												</mat-subtitle>
+												<p>
+													Ensure the plumber you're considering is licensed and insured. Licensing guarantees they meet local standards, and insurance protects both parties in case of accidents.	
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>3. Read Online Reviews</b>
+												</mat-subtitle>
+												<p>
+													Take advantage of online review platforms. Websites like Yelp and Google provide valuable insights from past customers. Look for consistently positive feedback and attention to customer service.	
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>4. Assess Experience</b>
+												</mat-subtitle>
+												<p>
+													Ask about the plumber's experience. How long have they been in business, and do they specialize in your type of plumbing issue? Experienced plumbers often provide efficient solutions.	
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>5. Get Multiple Quotes</b>
+												</mat-subtitle>
+												<p>
+													Don't settle for the first quote you receive. Request estimates from several plumbers to compare pricing and services. While pricing can vary, here's a general guide to common plumbing service costs in the UK:	
+												</p>
+													<ul class="list-groupQuotes">
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Fixing a leaking tap: £50 - £100</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Clearing a blocked drain: £80 - £150</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Replacing a toilet: £150 - £300</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Installing a new bathroom suite: £2,000 - £5,000</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Fixing a burst pipe: £150 - £350</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Boiler repair: £100 - £300 (plus parts if needed)</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Boiler installation: £2,000 - £3,000 (varies by type and size)</li>
+														<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>Annual boiler service: £70 - £100</li>	
+													</ul>
+												<p>
+													Please note that these are approximate costs and can vary based on your location and the specific requirements of the job.
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>6. Clarify the Scope</b>
+												</mat-subtitle>
+												<p>
+													Discuss the project thoroughly and ensure the plumber understands your needs. Request a written estimate that includes all costs and timelines to avoid surprises.	
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>7. Inquire About Guarantees</b>
+												</mat-subtitle>
+												<p>
+													Reputable plumbers often offer guarantees for their work. Ask about warranties or guarantees on the services provided.	
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>8. Check Availability, Including Emergency Callout</b>
+												</mat-subtitle>
+												<p>
+													Consider the plumber's availability and response time. Plumbing issues can be emergencies, so having a plumber who offers 24/7 services or quick responses, including emergency callouts, can be crucial.
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+													<b>9. Assess Professionalism</b>
+												</mat-subtitle>
+												<p>
+													Pay attention to the plumber's professionalism. Punctuality, preparedness, and clear communication are signs of a dedicated professional.
+												</p>
+											</li>
+											<li class="list-group-item">
+												<mat-subtitle>
+												<b>10. Trust Your Instincts</b>
+												</mat-subtitle>
+												<p>
+													Ultimately, trust your instincts. If something doesn't feel right or you have doubts about their qualifications, keep searching. Your confidence in your plumber is vital.By following these expert tips and referring to the pricing guide, you can improve your chances of finding the best local plumber for your needs and budget. A well-chosen plumber, including one who offers emergency callout services, can make all the difference when it comes to plumbing repairs and installations in the UK.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</mat-card-content>
+							</mat-card>
+					</div>	
+				</div>			
+			</div>
+		</form> 
+	</div>
+</div>
+   -->

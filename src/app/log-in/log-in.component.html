@@ -1,0 +1,35 @@
+<div class="container">
+	<form class="col col-sm-12 col-md-12 col-lg-12 login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+		<!-- Title -->
+		<div class="login-title">
+			<div class="title">Log In to your account</div>	
+		</div>
+		<mat-card class="login-card">
+			<mat-card-header>
+				<img src="../../assets/Images/Logo/Top_Builder.png" alt="" width="60" height="60" class="img">
+			</mat-card-header>
+			<mat-card-title>Log In with password</mat-card-title>
+			<mat-card-content>
+				<mat-form-field class="col-sm-12 col-md-12 col-lg-12 col-email">
+					<mat-label>Email Address</mat-label>
+					<input matInput placeholder="pat@example.com" formControlName="email" required>
+					
+				</mat-form-field>
+				<mat-form-field class="col-sm-12 col-md-12 col-lg-12 col-password">
+					<mat-label>Password</mat-label>
+					<input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+					<button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+					  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+					</button>
+				</mat-form-field>
+				<div class="col-sm-12 col-md-12 col-lg-12 login-button">
+					<button type="submit" mat-raised-button color="primary">Login</button>
+				</div>
+				<div class="forgot-password">
+					<a mat-flat-button href="">I don't know my password</a>
+				</div>
+			</mat-card-content>
+		</mat-card>
+	</form> 
+</div>
+  

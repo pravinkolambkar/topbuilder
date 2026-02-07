@@ -1,0 +1,42 @@
+<form class="col col-sm-12 col-md-12 col-lg-12" (ngSubmit)="onSubmit()" #myForm="ngForm">	
+	<mat-card class="login-card">
+		<mat-card-content>
+			<div>
+				<mat-card-title>
+					<div class="login-title">
+						Post your job for free. Get quotes. Read reviews.
+					</div>
+					<div class="subtitle">
+						How does it work?
+					</div>
+				</mat-card-title>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-select">
+				<label for="tradeperson" class="form-label">What type of tradeperson do you need?</label>
+				<mat-form-field class="mat-trade">
+					<mat-label>Select your trade</mat-label>
+					<mat-select name="tradeperson" [(ngModel)]="selectedTradeperson" (ngModelChange)="onTradepersonSelect($event)">
+						<!-- <mat-option value="2">tradeperson</mat-option> -->
+						
+						<mat-option *ngFor="let tradeperson of filteredTradeperson" [value]="tradeperson.Id">{{tradeperson.Title}}</mat-option>																
+					</mat-select>
+				</mat-form-field>
+
+				<label for="job" class="form-label">What type of job is it?</label>
+				<mat-form-field class="mat-job">
+					<mat-label>Please select job</mat-label>
+					<mat-select  name="job" [(ngModel)]="selectedJob" (ngModelChange)="onJobSelect($event)">
+						<mat-option *ngFor="let job of filteredJob" [value]="job.Id">{{job.Title}}</mat-option>																
+					</mat-select>
+				</mat-form-field>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12 login-button">
+				<button class="btn btn-primary btn-login" [disabled]="selectedTradepersonId == undefined || selectedJobId == undefined" type="submit" value="Submit">NEXT STEP
+					<span><i class="bi bi-arrow-right-square"></i></span>	
+				</button>	
+			</div>
+		</mat-card-content>
+	</mat-card>
+</form>
+
+<!-- D:\Work\TopBuilder\topBuilder\src\app\home\our-services\find-tradeperson\find-tradeperson.component.ts -->

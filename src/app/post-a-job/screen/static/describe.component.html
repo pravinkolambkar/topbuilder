@@ -1,0 +1,56 @@
+<div class="container">
+	<form class="col">
+		<div class="row row-describe">				
+			<div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 col-describe">
+				<mat-form-field appearance="outline" class="mat-describe">
+					<mat-label>Describe:</mat-label>
+							<textarea matInput [rows]="textareaRows" placeholder="eg. Describe what you want done" [formControl]="jobDescriptionFormControl"></textarea>
+					<mat-hint align="end">At least 30 characters please</mat-hint>
+					<mat-error *ngIf="jobDescriptionFormControl.hasError('required')">
+						Job Description is <strong>required</strong>
+					</mat-error>
+				</mat-form-field> 
+			</div>
+			<div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 col-message">
+				<span class="material-symbols-outlined">arrow_left</span>
+				<mat-card>
+					<mat-card-content class="card-message">
+						<div class="mat-card-content-div">
+							<span class="material-symbols-outlined" id="symbol-report">
+								report
+							</span>
+							<span>
+								<mat-card-title>
+									What makes a good job description
+								</mat-card-title>
+							</span>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row row-carddata">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span><i class="bi bi-circle-fill"></i></span>
+										Include the size and the scope of the work e.g. number of rooms, size of a wall.	
+								</li>
+							</ul>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span><i class="bi bi-circle-fill"></i></span>
+									Or, describe the problem you're experiencing. e.g. 'fuse box keeps tripping when...'
+								</li>
+							</ul>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span><i class="bi bi-circle-fill"></i></span>
+									Have you already bought materials, or do you want the tradesperson to supply them?
+								</li>
+							</ul>
+						</div>
+					</mat-card-content>
+				</mat-card>
+			</div>
+		</div>
+	</form>
+</div>
+
+

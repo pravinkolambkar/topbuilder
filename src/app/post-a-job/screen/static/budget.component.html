@@ -1,0 +1,39 @@
+<div class="container">
+	<form class="budget-form">
+		<div class="row row-msg">
+			<div class="col">
+				Typically, these jobs cost £250 - £5000
+			</div>
+		</div>
+		<div class="row row-budget">
+			<div class="col-md-4 col-message">
+				<mat-form-field class="mat-budget">
+					<mat-label>Select Budget</mat-label>
+					<mat-select [(value)]="selectedBudget">
+						<mat-option value="250">Under $250</mat-option>
+						<mat-option value="500">Under $500</mat-option>
+						<mat-option value="1000">Under $1000</mat-option>
+						<mat-option value="2000">Under $2000</mat-option>
+						<mat-option value="4000">Under $4000</mat-option>
+						<mat-option value="8000">Under $8000</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</div>
+			<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 col-message">
+				<span class="material-symbols-outlined">arrow_left</span>
+				<mat-card>						                         
+					<mat-card-content>	
+						<div class="mat-card-content-div">
+							<span class="material-symbols-outlined" id="symbol-report">
+								report
+							</span>
+							<span>
+								You're not committing to anything here. It's just a guide.
+							</span>
+						</div>						
+					</mat-card-content>
+				</mat-card>								
+			</div>
+		</div>
+	</form>
+</div>

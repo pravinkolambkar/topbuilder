@@ -1,0 +1,169 @@
+.container {
+  width: 100%;
+  position: absolute;
+ 
+  top: 0px;
+	display: flex;	
+  justify-content: flex-start;
+  align-items: center;
+	flex-direction: column;
+}
+
+.row-addphotos {
+  width: 100%;
+  display: flex;	
+  justify-content: flex-start;
+  align-items: center;
+	flex-direction: row;
+}
+
+.col-addphotos {
+  display: flex;	
+  justify-content: center;
+  align-items: center;
+	flex-direction: row;
+}
+
+app-file-upload {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+.row-fileupload {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 25px;
+}
+
+.col-file {
+  width: 60px;
+  height: 60px;
+  display: flex;	
+  justify-content: center;
+  align-items: center;
+}
+
+.col-photos {
+  width: 120px;
+  height: auto;
+  display: flex;	
+  justify-content: flex-start;
+  align-items: center;
+	flex-direction: row;
+}
+
+
+mat-grid-list {
+    width: 410px;
+    height: 85px;
+    border: 2px rgb(179, 177, 177) dashed;
+    border-radius: 3px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start; 
+    flex-direction: row; 
+  }
+  
+   mat-grid-tile {
+    width: 80px;
+    height: 80px;
+    /* border: .5px rgb(121, 121, 121) solid;
+    border-radius: 4px; */
+    background: white;
+    margin: 2px;
+    display: flex;
+    align-items:center;
+    justify-content: center;  
+  }
+  
+  img {
+    width: 20px;
+    height: 20px;
+    border: 1px rgb(121, 121, 121) solid;
+    border-radius: 4px;
+  }
+
+  .col-addvideo {
+    display: flex;	
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }  
+  
+  .video-card {
+    max-width: 300px;
+    height: 420px;
+    display: flex;
+    align-items:center;
+    justify-content: center;  
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+
+  mat-card-header{
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: row;
+  }
+  
+  #symbol-report {
+    color: #1c39bb;
+    font-weight: 500;
+  }
+
+  .material-symbols-outlined { 
+    margin-right: 0px; 
+    padding-right: 0px;
+    color: rgb(233, 80, 10);
+    font-weight: 600;
+  } 
+  
+  mat-card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .mat-card-image {
+    width: 275px;
+    height: 275px;
+    border: .5px rgb(197, 195, 195) solid;
+    border-radius: 5px;
+    background-size: cover;
+    transition: all 0.5s ease;
+  }
+
+  .mat-card-image:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .custom-divider {
+    background-color: rgb(197, 195, 195);
+    height: 1px;
+    margin: 20px 0;
+  }
+  
+  mat-card-content p {
+    color: rgb(121, 121, 121);
+    margin: 10px 0px;
+  }
+
+  /* Responsive */
+  @media (min-width: 768px) {
+
+    
+
+    .row-addphotos { 
+      justify-content: flex-start;
+    }
+
+    
+
+  }
+
+  

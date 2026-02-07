@@ -1,0 +1,31 @@
+<div class="container">		
+	<form class="jobtitle-form">			
+		<div class="row row-jobtitle">			
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-message">
+				<mat-form-field class="mat-jobtitle">
+					<mat-label>Job Title</mat-label>
+					<input matInput placeholder="eg. upstairs bathroom refit" [formControl]="jobTitleFormControl">
+					<mat-hint align="end">At least 8 characters please</mat-hint>
+						<mat-error *ngIf="jobTitleFormControl.hasError('required')">
+						Job Title is <strong>required</strong>
+						</mat-error>
+				</mat-form-field>
+			</div>		
+			<div class="col-md-6 col-message">
+				<span class="material-symbols-outlined">arrow_left</span>
+				<mat-card>						                         
+					<mat-card-content>	
+						<div class="mat-card-content-div">
+							<span class="material-symbols-outlined" id="symbol-report">
+								report
+							</span>
+							<span>
+								The title of your job is the first thing tradespeople will see.
+							</span>
+						</div>						
+					</mat-card-content>
+				</mat-card>				
+			</div>
+		</div>
+	</form>
+</div>

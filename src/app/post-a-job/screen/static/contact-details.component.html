@@ -1,0 +1,37 @@
+<div class="container">
+	<form class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 contact-form" [formGroup]="contactDetailsForm">	
+		<mat-card class="login-card">
+			<mat-card-header>
+				<mat-label>
+					Your details will be used to create a job post, so that you can monitor and manage the job you have posted.
+				</mat-label>
+			</mat-card-header>
+			<mat-card-content>
+				<div class="row row-name">
+						<mat-form-field class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mat-fname">
+							<mat-label>First Name</mat-label>
+							<input matInput placeholder="Enter your first name" formControlName="firstName">	
+						</mat-form-field>
+						<mat-form-field class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mat-lname">
+							<mat-label>Last Name</mat-label>
+							<input matInput placeholder="Enter your last name" formControlName="lastName">	
+						</mat-form-field>
+				</div>	
+				<mat-label class="mat-email">All communications will be sent here</mat-label>
+				<mat-form-field class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-email">
+					<mat-label>Enter your email</mat-label>
+					<input matInput placeholder="pat@example.com" formControlName="email" required>
+					<!-- <mat-error *ngIf="contactDetailsForm.email.invalid">{{getErrorMessage()}}</mat-error> -->
+				</mat-form-field>
+				<mat-form-field class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-phone">
+					<mat-label>Mobile No</mat-label>
+						<div class="row-phone">
+							<input matInput placeholder="Enter your mobile no" formControlName="mobile">	
+							<span class="material-symbols-outlined" id="symbol-phone">phone</span>
+						</div>
+						<mat-hint align="end">Include area code</mat-hint>
+				</mat-form-field>
+			</mat-card-content>
+		</mat-card>
+	</form>
+</div>

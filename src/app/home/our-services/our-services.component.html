@@ -1,0 +1,35 @@
+<div class="col-md-12 container">
+	<form class="col col-sm-12 col-md-12 col-lg-12">
+		<div class="our-services-title col-md-12">			
+			<h2 class="title">Our Trades and Services</h2>				
+		</div>
+		<div class="row cards-container-wrapper">					
+			<div class="our-services-card">			
+				<div class="row row-images">
+					
+					<div class="service-with-image" #serId  *ngFor="let service of services" (click) = "onClick(service.serviceId)">
+						<div class="service-image">
+							<a  routerLink="{{ service.routeUrl }}"><img mat-card-image src = "{{ service.imgSrc }}" alt="Plumber"></a>
+						</div>
+						<div>
+							<a class="our-service" routerLink="{{ service.routeUrl }}">{{ service.serviceName }}</a> 
+						</div>
+					</div>
+					
+				</div>	
+			</div>	
+		</div>
+	</form>
+</div>
+
+
+		
+	
+<!-- <div class="service-with-image">
+	<div class="service-image">
+		<a [routerLink]="['/cleaner']"><img mat-card-image src="../../assets/Images/Trades/cleaner.png" alt="Cleaner"></a>
+	</div>
+	<div>
+		<a class="our-service" [routerLink]="['cleaner']">Cleaner</a>
+	</div>
+</div>  -->

@@ -1,0 +1,156 @@
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+  * {
+    font-family: montserrat,sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px; 
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .pjobs-title {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 25px;
+    width: 350px;
+    margin: 4px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(121, 121, 121);
+    padding-bottom: 10px;    
+    /* border-bottom: 1px solid #1e90ff; */
+    border-bottom: 2px solid #709917;
+    box-shadow: rgba(112, 153, 23, 0.09) 0px 2px 1px, rgba(112, 153, 23, 0.09) 0px 4px 2px, rgba(112, 153, 23, 0.09) 0px 8px 4px, rgba(112, 153, 23, 0.09) 0px 16px 8px;
+  }
+
+  .cards-container-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    /* max-width:1125px; */
+  }
+   
+  .pjobs-card {
+    width: 315px;
+    height: 130px;
+    margin: 15px 15px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: transform 0.3s, margin-top 0.3s, all  0.3s;
+    cursor: pointer;
+  }
+  
+  .pjobs-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #f4f1fa;
+    box-shadow: rgba(186, 168, 216, 0.09) 0px 2px 1px, rgba(136, 91, 224, 0.09) 0px 4px 2px, rgba(111, 46, 241, 0.09) 0px 8px 4px, rgba(100, 26, 248, 0.09) 0px 16px 8px;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  } 
+
+  .card-image {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .card-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+    mat-card-title {
+      font-size: 18px;
+      margin: 1px;
+      line-height: 1;
+      color: rgb(41, 40, 43);
+      align-items: center;
+      font-weight: 500;
+    }
+
+    mat-card-subtitle {
+      font-size: 15px;
+      margin: 1px;
+      line-height: 1;
+      color: #709917;
+      align-items: center;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .mat-card-icon-div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+    }
+  
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.bi-caret-right-fill {
+  
+  width: 30px;
+  height: 30px;
+  color: #709917;
+}
+
+/* media query */
+
+/* @media (max-width: 767px) {
+
+  .pjobs-card {
+    width: 315px;
+    height: 130px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .pjobs-card {
+    width: 315px;
+    height: 130px;
+  }
+} */

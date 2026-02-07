@@ -1,0 +1,10 @@
+<div hidden>
+  <input hidden type="file" multiple accept="*/*" (change)="onChange($event)" #file>
+</div>
+
+<div>
+  <button type="button" class="file-upload-button" (click)="file.click()">
+    <img mat-card-image src="../../../assets/Images/FileUpload/FileUpload2.png" alt="FileUpload">
+  </button>
+</div>
+

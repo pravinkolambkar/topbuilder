@@ -1,0 +1,32 @@
+<div class="container">		
+	<form class="jobplace-form">			
+		<div class="row row-jobplace">			
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-postcode">
+				<mat-form-field class="mat-postcode">
+					<mat-label>Postcode</mat-label>
+					<input matInput placeholder="Enter your post code" [formControl]="jobPlaceFormControl">		
+					<span class="material-symbols-outlined" id="symbol-postcode">location_on</span>
+					<mat-error *ngIf="jobPlaceFormControl.hasError('required')">
+						Postcode is <strong>required</strong>
+					</mat-error>
+				</mat-form-field>
+			</div>
+			<div class="col-md-6 col-message">
+				<span class="material-symbols-outlined">arrow_left</span>
+				<mat-card>						                         
+					<mat-card-content>	
+						<div class="mat-card-content-div">
+							<span class="material-symbols-outlined" id="symbol-report">
+								report
+							</span>
+							<span>
+								We use this to find tradespeople who work in your area.
+							</span>
+						</div>						
+					</mat-card-content>
+				</mat-card>				
+			</div>			
+		</div>	
+	</form>
+</div>
+

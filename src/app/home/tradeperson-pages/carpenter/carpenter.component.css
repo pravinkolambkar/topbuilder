@@ -1,0 +1,220 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .carpenter-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .row-localcarpenter {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top: 70px;
+  }
+  
+  .card-image {
+    width: 930px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .carpenter-card {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    border: none; 
+    border-color: white;
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+  }
+
+  .col-detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    padding-left: 12px;
+    width: 800px;
+  }
+
+  mat-title {
+    width: 100%;
+    margin: 2px 0px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    align-items: center;
+    padding-bottom: 12px;    
+  }
+
+  .mat-mdc-card {
+    box-shadow: none;
+  }
+
+  p {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  span {
+    /* color: skyblue; */
+    /* color: #C3D4F2; */
+    color: #87a9e2;
+    font-weight: 600;
+    justify-content: center;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-stretch:wider; 
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+          /* Plumber data css code */
+
+  .carpenter-data {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .carpenterdata-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    border: none;
+  }
+
+   .carpenterdata-content {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 5px 5px 3px lightgray; 
+    border: 1px solid lightgray;
+    border-radius: 3px;
+  } 
+
+  .row-carpenterdata, .row-carpenterdatalist {
+    width: 100%;
+  }
+
+  .heading {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 500px;
+  }
+
+  mat-subtitle {
+    color: #333;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ul {
+    margin-left: 0px;
+  }
+
+  .list-groupQuotes {
+    width: 80%;
+    margin-left: 0px;
+    padding-left: 0px;
+    align-items: flex-start;
+  }
+ 
+  .list-group {
+    border: none;
+  }
+
+  .list-group-item {
+    font-weight: 500px;
+    color: #333;
+    border: none;
+    justify-content: center;
+  }
+
+  .bi-circle-fill {
+    font-size: 8px;
+    margin-right: 15px;
+  }
+
+      /* Trade selection dropdown css */
+
+  .row-image {
+    width: 930px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0px 0px;
+  }
+
+  .card-img-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .card-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .login-card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  img {
+    width: 430px;
+    height: 310px;
+    margin: 10px 0px;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 3px lightgray;
+    border-radius: 3px;
+  } 

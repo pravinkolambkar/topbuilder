@@ -1,0 +1,126 @@
+
+<div class="container flex-container col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
+	<form *ngIf="tppage">
+		<div class="row row-localtradeperson col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+			<div class="col col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-6 login-card-wrapper">
+				<app-find-tradeperson></app-find-tradeperson>
+			</div>
+			<div class="col col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-6 card-img-wrapper">
+				<img class="card-img" mat-card-image src="{{ tppage.imgSrc }}"alt="Builder">
+			</div>
+		</div>
+
+		<div class="row col col-md-12 col-lg-12 col-xl-12 col-xxl-12 tradeperson-data">
+			<mat-card class="tradeperson-card">
+				<mat-card-content class="tradepersondata-content">
+					<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12 row row-tradepersondata">
+						<mat-card-title>
+							<h2 class="heading mb-2">{{ tppage.tpTitle }}</h2>
+						</mat-card-title>
+						<p>
+							{{ tppage.tpTitleP }}
+						</p>
+					</div>
+	
+					<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12 row row-tradepersondatalist">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle1 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle1P }}
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle2 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle2P }}	
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle3 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle3P }}	
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle4 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle4P }}	
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle5 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle5P }}
+								</p>
+									<ul class="list-groupQuotes">
+										<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>{{ tppage.tpSubtitle5Q1 }}</li>
+										<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>{{ tppage.tpSubtitle5Q2 }}</li>
+										<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>{{ tppage.tpSubtitle5Q3 }}</li>
+										<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>{{ tppage.tpSubtitle5Q4 }}</li>
+										<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>{{ tppage.tpSubtitle5Q5 }}</li>
+										<li class="list-group-item"><span><i class="bi bi-circle-fill"></i></span>{{ tppage.tpSubtitle5Q6 }}</li>
+									</ul>
+								<p>
+									{{ tppage.tpSubtitle5P2 }}
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle6 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle6P }}	
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle6 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle7P }}	
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle8 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle8P }}
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+									<b>{{ tppage.tpSubtitle9 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle9P }}
+								</p>
+							</li>
+							<li class="list-group-item">
+								<mat-card-subtitle>
+								<b>{{ tppage.tpSubtitle10 }}</b>
+								</mat-card-subtitle>
+								<p>
+									{{ tppage.tpSubtitle10P }}
+								</p>
+							</li>
+						</ul>
+					</div>
+				</mat-card-content>
+			</mat-card>
+		</div>		
+	</form>			
+</div>
+
+  

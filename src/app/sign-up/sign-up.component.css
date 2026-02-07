@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    /* top: 160px;  */
+    left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    
+  }
+
+  .login-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-bottom: 20px;
+  }
+
+  .login-title {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px;
+  }
+
+  .title {
+    width: 350px;
+    margin: 4px;
+    padding-left: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(121, 121, 121);
+  }
+
+  .login-card {
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: rgba(112, 153, 23, 0.4) 0px 0px 0px 2px, rgba(112, 153, 23, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.09) 0px 2px .5px;
+  }
+  
+  mat-card-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container mat-form-field + mat-form-field {
+    margin: 4px 4px;
+  }
+
+  .row-name, .row-detail, .row-select {
+    margin-bottom: 8px;
+  }
+
+  .col-name, .col-detail, .col-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .row-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  button {
+    width: 425px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .msg {
+    font-size: 16px;
+    font-weight: 600;
+    color: #709917;
+  }
+
+  p {
+    font-size: 14px;
+    color: rgb(121, 121, 121);
+    align-items: center;
+    margin: 8px 0px;
+  }
+
+  .note {
+    font-weight: 600;
+  }
+
+  span {
+    color: #709917;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  #symbol-phone {
+    color: #709917;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  mat-divider {
+    margin-top: 10px;
+    color: rgb(121, 121, 121);
+  }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+
+    .container {
+      margin-top: 360px;
+    }
+  }
+  

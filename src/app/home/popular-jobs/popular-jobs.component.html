@@ -1,0 +1,40 @@
+<div class="col col-sm-12 col-md-12 col-lg-12 container" >
+	<form class="pjobs-form">
+		<div class="pjobs-title">			
+			<h2 class="title">Our most popular jobs</h2>				
+		</div>
+		<div class="col col-md-12 cards-container-wrapper">			
+			<div class="col-md-12 cards-container">
+				<mat-card class="pjobs-card" (click)="onCardClick()" *ngFor="let pjob of pjobs">
+					<div class="col card-image">
+						<img mat-card-image src="{{ pjob.imgSrc }}" alt="Bathroom Design">
+					</div>
+					<mat-card-content class="card-text">
+						<mat-card-subtitle>
+							{{ pjob.jobSubtitle }}
+						</mat-card-subtitle>
+						<mat-card-title>
+							{{ pjob.jobTitle }}
+						</mat-card-title>
+					</mat-card-content>
+					<div class="mat-card-icon-div">
+						<!-- <span><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></span> -->
+						<span><i class="bi bi-caret-right-fill"></i></span>
+					</div>
+				</mat-card>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<!-- 
+	<i class="fa fa-camera-retro fa-3x"></i>
+	<i class="fa-solid fa-chevron-right"></i>
+ -->
+<!-- builder - bathroom Design
+electrician - Internal lighting
+Carpenter - Built-in Furniture
+Plumber -plumbing repair and maintenance
+painter - external wall painting
+kitchen specialist -kitchen installation -->

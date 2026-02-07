@@ -1,0 +1,45 @@
+.outer-container {
+    width: 100vw;
+    min-height: 100%;
+    height: auto;
+    position:relative;
+    top: 0px;
+    left: 0px;
+}
+
+.inner-container {
+    width: 100%;
+    height: auto;
+    position:absolute;
+    
+    
+    /* background-image: 
+        linear-gradient(to right bottom,white,rgb(255, 162, 162)); */
+    
+    
+    /* --s: 500px;
+    
+    --_g: #ECEDDC 90deg,#0000 90.5deg;
+    background:
+        conic-gradient(from -45deg,var(--_g)),
+        conic-gradient(from 135deg,var(--_g)) calc(var(--s)/2) 0,
+        #ffeae9;
+    background-size: var(--s) var(--s) */
+}
+
+/* router-outlet {
+    width: 100%;
+    height: auto;
+    position:absolute;
+    padding-bottom: 280px;
+    
+} */
+
+/* .footer_app {
+    width: 100vw;
+    height: 280px;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    
+} */

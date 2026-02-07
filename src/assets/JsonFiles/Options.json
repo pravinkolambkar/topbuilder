@@ -1,0 +1,58 @@
+[
+    {
+        "Id" : 1,
+        "Title" : "Urgently"
+    },
+    {
+        "Id" : 2,
+        "Title" : "Within 2 days"
+    },
+    {
+        "Id" : 3,
+        "Title" : "Within 2 weeks"
+    },
+    {
+        "Id" : 4,
+        "Title" : "Within 2 months"
+    },
+    {
+        "Id" : 5,
+        "Title" : "2 months+"
+    },
+    {
+        "Id" : 6,
+        "Title" : "Flexible start date"
+    },
+    {
+        "Id" : 7,
+        "Title" : "I am ready to hire"
+    },
+    {
+        "Id" : 8,
+        "Title" : "I am planning and budgeting"
+    },
+    {
+        "Id" : 9,
+        "Title" : "I need a quote for insurance purposes"
+    },
+    {
+        "Id" : 10,
+        "Title" : "Are you owner and authorise to make property changes?"
+    },
+    {
+        "Id" : 11,
+        "Title" : "First name"
+    },
+    {
+        "Id" : 12,
+        "Title" : "Last name"
+    },
+    {
+        "Id" : 13,
+        "Title" : "Email"
+    },
+    {
+        "Id" : 14,
+        "Title" : "Mobile number"
+    }
+]

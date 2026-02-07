@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div *ngFor="let option of options">
+			<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 form-check">
+				<input type="radio" class="form-check-input" name="option" [value]="option.Id" [(ngModel)]="selectedOptionId" (change)="changeOption()">
+				<label class="form-check-label" for="option">{{ option.Title }}</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="container"> 
+    <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group" name="option">
+            <label id="example-radio-group-label" *ngFor="let option of options">{{ option.Title }}</label>
+            <mat-radio-button class="example-radio-button" name="option" [(ngModel)]="selectedOptionId" (change)="changeOption()">
+            </mat-radio-button>
+    </mat-radio-group>
+</div> -->

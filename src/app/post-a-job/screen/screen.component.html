@@ -1,0 +1,30 @@
+<div class="container mt-2">
+    <div>
+        <h4>{{ questionTitle }}</h4>
+    </div>
+
+    <div *ngIf="screenType == 'dynamic'">
+        <app-dynamic [selectedOptionId]="selectedOptionId" [options]="options" (optionChanged)="changeOption($event)"></app-dynamic>
+    </div>
+    <div *ngIf="screenType == 'jobtitle'">
+        <app-job-title (optionChanged)="changeOption($event)"></app-job-title>
+    </div>
+    <div *ngIf="screenType == 'describe'">
+        <app-describe (optionChanged)="changeOption($event)"></app-describe>
+    </div>
+    <div *ngIf="screenType == 'addphotos'">
+        <app-add-photos (optionChanged)="changeOption($event)"></app-add-photos>
+    </div>
+    <div *ngIf="screenType == 'budget'">
+        <app-budget (optionChanged)="changeOption($event)"></app-budget>
+    </div>
+    <div *ngIf="screenType == 'contactdetails'">
+        <app-contact-details (optionChanged)="changeOption($event)"></app-contact-details>
+    </div>
+    <div *ngIf="screenType == 'jobplace'">
+        <app-jobplace (optionChanged)="changeOption($event)"></app-jobplace>
+    </div>
+    <div *ngIf="screenType == 'jobterms'">
+        <app-job-terms (optionChanged)="changeOption($event)"></app-job-terms>
+    </div>
+</div>

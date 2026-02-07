@@ -1,0 +1,38 @@
+[
+    {
+        "popularjobId" : 1,
+        "jobTitle" : "Builder",
+        "jobSubtitle" : "Bathroom Design",
+        "imgSrc" : "../../assets/Images/PopularJobs/Bathroom_1.png"
+    },
+    {
+        "popularjobId" : 2,
+        "jobTitle" : "Kitchen Specialist",
+        "jobSubtitle" : "Kitchen Installation",
+        "imgSrc" : "../../assets/Images/PopularJobs/Kitchen_1.png"
+    },
+    {
+        "popularjobId" : 3,
+        "jobTitle" : "Painter",
+        "jobSubtitle" : "External Wall Painting",
+        "imgSrc" : "../../assets/Images/PopularJobs/Painter_1.png"
+    },
+    {
+        "popularjobId" : 4,
+        "jobTitle" : "Plumber",
+        "jobSubtitle" : "Plumbing Repair",
+        "imgSrc" : "../../assets/Images/PopularJobs/Plumber_1.png"
+    },
+    {
+        "popularjobId" : 5,
+        "jobTitle" : "Carpenter",
+        "jobSubtitle" : "Built-In Furniture",
+        "imgSrc" : "../../assets/Images/PopularJobs/Carpenter_1.png"
+    },
+    {
+        "popularjobId" : 6,
+        "jobTitle" : "Electrician",
+        "jobSubtitle" : "Internal Lighting",
+        "imgSrc" : "../../assets/Images/PopularJobs/Electrician_1.png"
+    }
+]

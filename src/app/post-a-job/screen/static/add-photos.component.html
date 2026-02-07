@@ -1,0 +1,40 @@
+<div class="container">	
+	<div class="row row-addphotos">
+		<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 col-addphotos">
+			<div class="row row-fileupload" >
+				<div class="col col-file">
+					<app-file-upload class="col" (fileSelection)="onFileSelection($event)">	
+					</app-file-upload>
+				</div>
+				<div class="col col-photos">
+					<mat-grid-list cols="3" rowHeight="2:1" gutterSize="5">
+						<mat-grid-tile *ngFor="let fileUrl of fileUrls" [colspan]="fileUrl.cols" [rowspan]="fileUrl.rows">							
+							<img [src]="fileUrl">
+						</mat-grid-tile>			
+					</mat-grid-list>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 col-addvideo">
+			<span class="material-symbols-outlined">arrow_left</span>
+			<mat-card class="video-card">
+				<mat-card-header>
+					<span class="material-symbols-outlined" id="symbol-report">
+						report
+					</span>
+					<span>
+						<mat-card-title>Bring your job to life</mat-card-title>
+					</span>
+				</mat-card-header>
+					<img style="width: 200px; height: auto;" class="mat-card-image"  src="../../../assets/Images/FileUpload/Workman.jpeg" alt="TopBuilder">
+				<mat-card-content>		
+					<p>
+						Photos and videos significantly increase a tradesperson's understanding of what you need, right from the start.
+					</p>
+				</mat-card-content>
+			</mat-card>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,77 @@
+<div class="container mb-3 pb-3">
+	<form class="col col-sm-12 col-md-12 col-lg-12 login-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+		<!-- Title -->
+		<div class="login-title">
+			<div class="title">Tradeperson Log In</div>	
+		</div>
+		<mat-card class="login-card">
+			<mat-card-content>
+				<div class="row row-name">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-name">
+						<mat-form-field class="mat-fname">
+							<mat-label>First Name</mat-label>
+							<input matInput placeholder="Enter your first name" formControlName="firstName">	
+						</mat-form-field>
+						<mat-form-field class="mat-lname">
+							<mat-label>Last Name</mat-label>
+							<input matInput placeholder="Enter your last name" formControlName="lastName">	
+						</mat-form-field>
+					</div>
+				</div>
+
+				<div class="row row-detail">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-detail">
+						<mat-form-field class="mat-email">
+							<mat-label>Email Address</mat-label>
+							<input matInput placeholder="pat@example.com" formControlName="email" required>
+							
+						</mat-form-field>
+						<mat-form-field class="mat-phone">
+							<mat-label>Mobile No</mat-label>
+								<div class="row-phone">
+									<input matInput placeholder="Enter your mobile no" formControlName="mobile">	
+									<span class="material-symbols-outlined" id="symbol-phone">phone</span>
+								</div>
+						</mat-form-field>
+					</div>
+				</div>
+
+				<div class="row row-select">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-select">
+						<mat-form-field class="mat-trade">
+							<mat-label>Select your trade</mat-label>
+							<mat-select [(value)]="selectedTrade" formControlName="trade">
+								<mat-option value="Bathroom Fitter">Bathroom Fitter</mat-option>
+								<mat-option value="Builder">Builder</mat-option>
+								<mat-option value="Carpenter">Carpenter</mat-option>
+							</mat-select>
+						</mat-form-field>
+						<mat-form-field class="mat-employees">
+							<mat-label>No. of employees</mat-label>
+							<mat-select [(value)]="selectedEmpno" formControlName="empNos"	>
+								<mat-option value="Just me">Just me</mat-option>
+								<mat-option value="2-5">2-5</mat-option>
+								<mat-option value="6-10">6-10</mat-option>
+								<mat-option value="10+">10+</mat-option>
+							</mat-select>
+						</mat-form-field>
+					</div>
+				</div>
+
+				
+				<div class="col-sm-12 col-md-12 col-lg-12 login-button">
+					<button type="submit" mat-raised-button color="primary">Get Started</button>
+				</div>
+					<mat-divider></mat-divider>
+				
+				<mat-label class="msg">
+					We'll be in touch as soon as possible
+				</mat-label>
+				<p class="note">Please note: we're not a job agency, we give access to job leads</p>
+				<p>You're under no obligation to join, we'll just take a little time to explain how Rated People works over a phone call.</p>
+				<p>By completing this form you agree to our <span>privacy policy.</span></p>
+			</mat-card-content>
+		</mat-card>
+	</form> 
+</div>
+  
