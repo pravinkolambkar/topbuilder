@@ -12,7 +12,7 @@ import { QuestionOption } from '../models/questionoption.model';
 })
 export class QuestionsService implements OnInit {
     questions: Questions[] = [];
-    private questionsUrl = '../../assets/JsonFiles/Questions.json';
+    private questionsUrl = 'assets/JsonFiles/Questions.json';
 
   	constructor(private http: HttpClient) {}
 

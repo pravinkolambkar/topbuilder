@@ -9,7 +9,7 @@ import { Subject } from 'rxjs';
     providedIn: 'root',
 })
 export class QuestionOptionsService implements OnInit {    
-    private questionOptionsUrl = '../../assets/JsonFiles/QuestionOptions.json';
+    private questionOptionsUrl = 'assets/JsonFiles/QuestionOptions.json';
     private questionOptionsData: QuestionOption[] = [];
     questionOptions =new Subject<QuestionOption[]>();
 

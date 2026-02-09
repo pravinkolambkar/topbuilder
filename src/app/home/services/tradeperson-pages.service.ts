@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
     providedIn: 'root',
 })
 export class TradepersonPagesService implements OnInit {    
-    private tpPagesUrl = '../../assets/JsonFiles/TradepersonPages.json';
+    private tpPagesUrl = 'assets/JsonFiles/TradepersonPages.json';
 
     constructor(private http: HttpClient) {}
 

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import tradepersonjobData from '../../assets/JsonFiles/TradePersonJobs.json';
+import tradepersonjobData from 'src/assets/JsonFiles/TradePersonJobs.json';
 import { TradepersonJob } from './models/tradepersonjob.model';
 import { QuestionsService } from '../post-a-job/services/questions.service';
 import { OptionsService } from '../post-a-job/services/options.service';
@@ -70,9 +70,10 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  onTradepersonSelect(event: any) {
-    this.selectedTradepersonId = event;
-    console.log(this.selectedTradepersonId);
+  onTradepersonSelect(tradepersonId: any) {
+    console.log(tradepersonId);
+    this.filteredJob = [];
+    this.selectedJobId = null;
     this.getfilteredJobs();
   }
 
@@ -84,18 +85,17 @@ export class HomeComponent implements OnInit {
     console.log(this.filteredJob);
   }
 
-  onJobSelect(event: any) {
-    console.log(event);
-    this.selectedJobId = event;
-    console.log(this.selectedJobId);
+  onJobSelect(jobId: any) {
+    console.log(jobId);
+    console.log('Job ID selected:', jobId);
 
-    const selectedJob = tradepersonjobData.find(tp => tp.Id == this.selectedJobId);
-    console.log(this.selectedJob);
+    const selectedJob = tradepersonjobData.find(tp => tp.Id == jobId);
+    console.log('Selected Job:', selectedJob);
     
     if(selectedJob){
       if(selectedJob.StartQuestionId){
         this.startQuestionId = selectedJob.StartQuestionId;
-        console.log(this.startQuestionId);
+        console.log('Start Question ID:', this.startQuestionId);
       }
     }
   }

@@ -1,10 +1,9 @@
-
 [
     {
 
         "tradepersonId" : 1,
         "tradepersonName" : "Plumber",
-        "imgSrc" : "../../assets/Images/tpPages/plumbing_work.jpg",
+        "imgSrc" : "assets/Images/tpPages/plumbing_work.jpg",
         "tpTitle" : "How to Find the Best Local Plumber: Expert Tips and Pricing Guide",
         "tpTitleP" : "When it comes to plumbing projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local plumber is essential. The right plumber can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local plumber in the UK, along with a general pricing guide for common plumbing services.",
             "tpSubtitle1" : "1. Explore Skilled Plumbers",
@@ -40,7 +39,7 @@
 
         "tradepersonId" : 2,
         "tradepersonName" : "Builder",
-        "imgSrc" : "../../assets/Images/tpPages/builder_work.jpg",
+        "imgSrc" : "assets/Images/tpPages/builder_work.jpg",
         "tpTitle" : "How to Find the Best Local Builder: Expert Tips and Pricing Guide",
         "tpTitleP" : "When it comes to construction and home improvement projects, finding a skilled and reliable local builder is the cornerstone of success. Whether you're planning a home renovation, a new construction project, or any building work, the right builder can turn your vision into reality. Here are some expert tips to help you in your search for the best local builder in the UK, along with a general pricing guide for common construction services.",
             "tpSubtitle1" : "1. Explore Qualified Builders",
@@ -76,7 +75,7 @@
 
             "tradepersonId" : 3,
             "tradepersonName" : "Carpenter",
-            "imgSrc" : "../../assets/Images/tpPages/carpenter_work.jpg",
+            "imgSrc" : "assets/Images/tpPages/carpenter_work.jpg",
             "tpTitle" : "How to Find the Best Local Carpenter: Expert Tips and Pricing Guide",
             "tpTitleP" : "When it comes to carpentry projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local carpenter is essential. The right carpenter can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local carpenter in the UK, along with a general pricing guide for common carpentry services.",
                 "tpSubtitle1" : "1. Explore Skilled Carpenters",
@@ -112,7 +111,7 @@
 
             "tradepersonId" : 4,
             "tradepersonName" : "Decorator",
-            "imgSrc" : "../../assets/Images/tpPages/decorator_work.jpg",
+            "imgSrc" : "assets/Images/tpPages/decorator_work.jpg",
             "tpTitle" : "How to Find the Best Local Decorator: Expert Tips and Pricing Guide",
             "tpTitleP" : "When it comes to decorating projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local decorator is essential. The right decorator can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local decorator in the UK, along with a general pricing guide for common decorating services.",
                 "tpSubtitle1" : "1. Explore Skilled Decorators",
@@ -148,7 +147,7 @@
 
             "tradepersonId" : 5,
             "tradepersonName" : "Kitchen Specialist",
-            "imgSrc" : "../../assets/Images/tpPages/kitchen_work.jpg",
+            "imgSrc" : "assets/Images/tpPages/kitchen_work.jpg",
             "tpTitle" : "How to Find the Best Local Kitchen Specialist: Expert Tips and Pricing Guide",
             "tpTitleP" : "When it comes to kitchen projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local kitchen specialist is essential. The right kitchen specialist can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local kitchen specialist in the UK, along with a general pricing guide for common kitchen services.",
                 "tpSubtitle1" : "1. Explore Skilled Kitchen Specialists",
@@ -184,7 +183,7 @@
 
             "tradepersonId" : 6,
             "tradepersonName" : "Electrician",
-            "imgSrc" : "../../assets/Images/tpPages/electrician_work.jpg",
+            "imgSrc" : "assets/Images/tpPages/electrician_work.jpg",
             "tpTitle" : "How to Find the Best Local Electrician: Expert Tips and Pricing Guide",
             "tpTitleP" : "When it comes to electrical projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local electrician is essential. The right electrician can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local electrician in the UK, along with a general pricing guide for common electrical services.",
                 "tpSubtitle1" : "1. Explore Skilled Electricians",
@@ -220,7 +219,7 @@
 
             "tradepersonId" : 7,
             "tradepersonName" : "Roofer",
-            "imgSrc" : "../../assets/Images/tpPages/roofer_work.jpg",
+            "imgSrc" : "assets/Images/tpPages/roofer_work.jpg",
             "tpTitle" : "How to Find the Best Local Roofer: Expert Tips and Pricing Guide",
             "tpTitleP" : "When it comes to roofing projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local roofer is essential. The right roofer can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local roofer in the UK, along with a general pricing guide for common roofing services.",
                 "tpSubtitle1" : "1. Explore Skilled Roofers",
@@ -256,7 +255,7 @@
 
             "tradepersonId" : 8,
             "tradepersonName" : "Cleaner",
-            "imgSrc" : "../../assets/Images/tpPages/cleaner_work.jpg",
+            "imgSrc" : "assets/Images/tpPages/cleaner_work.jpg",
             "tpTitle" : "How to Find the Best Local Cleaner: Expert Tips and Pricing Guide",
             "tpTitleP" : "When it comes to cleaning projects, whether you're planning a home renovation, custom furniture creation, or even simple repairs, finding a skilled local cleaner is essential. The right cleaner can transform your ideas into beautifully crafted realities. Here are some expert tips to help you in your search for the best local cleaner in the UK, along with a general pricing guide for common cleaning services.",
                 "tpSubtitle1" : "1. Explore Skilled Cleaners",

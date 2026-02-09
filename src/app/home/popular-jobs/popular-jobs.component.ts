@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PopularJobs } from '../models/popularjobs.model';
-import  popularjobsData from '../../../assets/JsonFiles/PopularJobs.json';
+import popularjobsData from 'src/assets/JsonFiles/PopularJobs.json';
 import { MaterialModule } from 'src/app/material.module';
 import { CommonModule } from '@angular/common';
 

@@ -3,7 +3,7 @@ import { FormsModule, NgForm  } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
-import tradepersonjobData from '../../../../assets/JsonFiles/TradePersonJobs.json';
+import tradepersonjobData from 'src/assets/JsonFiles/TradePersonJobs.json';
 import { TradepersonJob } from '../../models/tradepersonjob.model';
 
 import { MaterialModule } from 'src/app/material.module';

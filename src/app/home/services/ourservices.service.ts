@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
     providedIn: 'root',
 })
 export class OurservicesService implements OnInit {    
-    private ourServicesUrl = '../../../assets/JsonFiles/OurServices.json';
+    private ourServicesUrl = 'assets/JsonFiles/OurServices.json';
 
     constructor(private http: HttpClient) {}
 

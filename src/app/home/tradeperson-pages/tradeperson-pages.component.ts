@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TradepersonPages } from '../models/tradepersonpages.model'; 
-import  tradepersonpagesData from '../../../assets/JsonFiles/TradepersonPages.json';
+import  tradepersonpagesData from 'src/assets/JsonFiles/TradepersonPages.json';
 import { TradepersonPagesService } from '../services/tradeperson-pages.service';
 import { MaterialModule } from 'src/app/material.module';
 import { FindTradePersonComponent } from '../our-services/find-tradeperson/find-tradeperson.component';

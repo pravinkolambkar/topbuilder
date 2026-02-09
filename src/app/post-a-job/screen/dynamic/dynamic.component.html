@@ -2,8 +2,8 @@
 	<div class="row">
 		<div *ngFor="let option of options">
 			<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 form-check">
-				<input type="radio" class="form-check-input" name="option" [value]="option.Id" [(ngModel)]="selectedOptionId" (change)="changeOption()">
-				<label class="form-check-label" for="option">{{ option.Title }}</label>
+				<input type="radio" class="form-check-input" name="option" [id]="'option_' + option.Id" [value]="option.Id" [(ngModel)]="selectedOptionId" (change)="changeOption()">
+				<label class="form-check-label" [for]="'option_' + option.Id">{{ option.Title }}</label>
 			</div>
 		</div>
 	</div>

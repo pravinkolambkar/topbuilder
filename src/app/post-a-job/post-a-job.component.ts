@@ -39,6 +39,10 @@ export class PostJobComponent implements OnInit{
     private jobPostService: JobPostService) {}
 
   ngOnInit() {    
+        // Load questions and options data
+        this.questionsService.getQuestions();
+        this.optionsService.getOptions();
+
         const tpId = this.route.snapshot.paramMap.get('selectedTradepersonId');
         if(tpId !== null){
             this.selectedTradepersonId = +tpId;
@@ -52,9 +56,13 @@ export class PostJobComponent implements OnInit{
         }
 
         const startQuestionId = this.route.snapshot.paramMap.get('startQuestionId');
-        if(startQuestionId !== null){
+        if(startQuestionId !== null && startQuestionId !== 'null' && startQuestionId !== 'undefined'){
             this.questionId = +startQuestionId;
-            console.log(this.questionId);
+            console.log('Start Question ID:', this.questionId);
+        } else {
+            // Default to first question if no start question is provided
+            this.questionId = 1;
+            console.log('No start question provided, defaulting to question 1');
         }
 
         this.questionOptionsService.questionOptions.subscribe(data => {
@@ -65,6 +73,8 @@ export class PostJobComponent implements OnInit{
             this.SetQuestionIds();
             this.setQuestionTitle(this.questionId);
             this.setQuestionOptions(this.questionId);
+            this.setScreenType();
+            this.progressValue = 10;
           }
         });
 
@@ -161,34 +171,65 @@ export class PostJobComponent implements OnInit{
   }
 
   goToNextQuestion() {
-    if(this.selectedOptionId){      
-      const selectedQuestionOption = this.questionOptions.find(qo => qo.TradePersonJobId == this.selectedJobId && qo.OptionId == this.selectedOptionId && qo.QuestionId == this.questionId);
+    console.log('Current Question ID:', this.questionId);
+    console.log('Selected Option ID:', this.selectedOptionId);
+    
+    // For dynamic questions with selected options
+    if(this.selectedOptionId && this.selectedOptionId !== -1){      
+      const selectedQuestionOption = this.questionOptions.find(qo => 
+        qo.TradePersonJobId == this.selectedJobId && 
+        qo.OptionId == this.selectedOptionId && 
+        qo.QuestionId == this.questionId
+      );
 
-      console.log(selectedQuestionOption);
+      console.log('Selected Question Option:', selectedQuestionOption);
       if(selectedQuestionOption){
-        console.log(selectedQuestionOption);
+        console.log('Question Option found:', selectedQuestionOption);
         if(selectedQuestionOption.OptionId !== -1){
           this.updateJobPost(selectedQuestionOption);
         }
-        if(selectedQuestionOption.NextQuestionId){
-          console.log(selectedQuestionOption.NextQuestionId);
-          if(selectedQuestionOption.NextQuestionId !== -1){                   
-            this.questionId = selectedQuestionOption.NextQuestionId;
-            if(this.questionId){
-              this.setQuestionTitle(this.questionId);
-              this.setQuestionOptions(this.questionId);
-
-              this.setScreenType();            
-              console.log(this.screenType);
-              this.setQuestionIndex();
-              this.selectedOptionId = this.getPrevNextSelectedOptionId(this.questionId);
-              this.forwardProgressValue();            
-            }
-          } 
-        }
+        this.navigateToNextQuestion(selectedQuestionOption.NextQuestionId);
       }
     }
+    // For static components with OptionId -1 (job-title, describe, addphotos, etc.)
+    else if(this.selectedOptionId === -1) {
+      const staticComponentOption = this.questionOptions.find(qo =>
+        qo.TradePersonJobId == this.selectedJobId &&
+        qo.OptionId === -1 &&
+        qo.QuestionId == this.questionId
+      );
+
+      console.log('Static Component Option:', staticComponentOption);
+      if(staticComponentOption){
+        this.navigateToNextQuestion(staticComponentOption.NextQuestionId);
+      } else {
+        console.warn('No navigation option found for static component. Question ID:', this.questionId);
+      }
+    }
+    else {
+      console.warn('No option selected. Please select an option before proceeding.');
+    }
     console.log(this.jobPostService.JobPost);
+  }
+
+  navigateToNextQuestion(nextQuestionId: number | undefined) {
+    if(nextQuestionId && nextQuestionId !== -1){
+      console.log('Navigating to Question ID:', nextQuestionId);
+      this.questionId = nextQuestionId;
+      this.selectedOptionId = -1;
+      
+      if(this.questionId){
+        this.setQuestionTitle(this.questionId);
+        this.setQuestionOptions(this.questionId);
+        this.setScreenType();            
+        console.log('Screen Type:', this.screenType);
+        this.setQuestionIndex();
+        this.selectedOptionId = this.getPrevNextSelectedOptionId(this.questionId);
+        this.forwardProgressValue();
+      }
+    } else {
+      console.log('No next question available or last question reached.');
+    }
   }
 
   getPreviousQuestionId(questionId: number){

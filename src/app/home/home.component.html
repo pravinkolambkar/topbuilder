@@ -9,7 +9,7 @@
 			<div class="sub-title">Post your job. Get quotes. Read reviews.</div>	
 		</div>
 		<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 home-image">
-			<img class="homeImg" src="../../assets/Images/Home/Tradespersons_1.jpg" alt="Tradespersons">
+			<img class="homeImg" src="assets/Images/Home/Tradespersons_1.jpg" alt="Tradespersons">
 		</div>
 	</div>
 	<!-- Form and Images-->
@@ -19,7 +19,7 @@
 				<div class="row-select">
 					<div class="dropdown-container">
 						<label for="tradeperson" class="row-form-label">What type of tradeperson do you need?</label>
-							<select class="form-control form-control-sm" placeholder="Please select tradeperson" name="tradeperson" (ngModelChange)="onTradepersonSelect($event)" ngModel>
+							<select class="form-control form-control-sm" placeholder="Please select tradeperson" name="tradeperson" [(ngModel)]="selectedTradepersonId" (ngModelChange)="onTradepersonSelect($event)">
 								<option [value]="null">Select Tradesperson Type</option>
 								<option *ngFor="let tradeperson of filteredTradeperson" [value]="tradeperson.Id">
 									{{ tradeperson.Title }}
@@ -28,7 +28,7 @@
 					</div>	
 					<div class="dropdown-container">
 						<label for="job" class="row-form-label">What type of job is it?</label>
-							<select class="form-control form-control-sm" placeholder="Please select job" [disabled]="selectedTradepersonId == undefined" name="job" (ngModelChange)="onJobSelect($event)" ngModel>
+							<select class="form-control form-control-sm" placeholder="Please select job" [disabled]="selectedTradepersonId == null || selectedTradepersonId == undefined" name="job" [(ngModel)]="selectedJobId" (ngModelChange)="onJobSelect($event)">
 								<option [value]="null">Select Job Type</option>
 								<option *ngFor="let job of filteredJob" [value]="job.Id">
 									{{ job.Title }}
@@ -73,5 +73,5 @@
 </div>
 
 
-  
+
 
