@@ -2,49 +2,49 @@
     {
         "serviceId" : 1,
         "serviceName" : "Plumber",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/plumber.png",
+        "imgSrc" : "assets/Images/Trades/plumber.png",
         "routeUrl" : "/plumber"
     },
     {
         "serviceId" : 2,
         "serviceName" : "Builder",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/builder.png",
+        "imgSrc" : "assets/Images/Trades/builder.png",
         "routeUrl" : "/builder"
     },
     {
         "serviceId" : 3,
         "serviceName" : "Carpenter",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/carpenter.png",
+        "imgSrc" : "assets/Images/Trades/carpenter.png",
         "routeUrl" : "/carpenter"
     },
     {
         "serviceId" : 4,
         "serviceName" : "Decorator",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/decorator.png",
+        "imgSrc" : "assets/Images/Trades/decorator.png",
         "routeUrl" : "/decorator"
     },
     {
         "serviceId" : 5,
         "serviceName" : "Kitchen Specialist",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/kitchen.png",
+        "imgSrc" : "assets/Images/Trades/kitchen.png",
         "routeUrl" : "/kitchenspecialist"
     },
     {
         "serviceId" : 6,
         "serviceName" : "Electrician",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/electrician.png",
+        "imgSrc" : "assets/Images/Trades/electrician.png",
         "routeUrl" : "/electrician"
     },
     {
         "serviceId" : 7,
         "serviceName" : "Roofer",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/roofer.png",
+        "imgSrc" : "assets/Images/Trades/roofer.png",
         "routeUrl" : "/roofer"
     },
     {
         "serviceId" : 8,
         "serviceName" : "Cleaner",
-        "imgSrc" : "/topbuilder/assets/Images/Trades/cleaner.png",
+        "imgSrc" : "assets/Images/Trades/cleaner.png",
         "routeUrl" : "/cleaner"
     }
 ]
